@@ -26,11 +26,12 @@ public class Rock : Platform {
 
 			Vector3 direction = target.y == topPosition.y ? Vector3.up : Vector3.down;
 			transform.localPosition += direction * Time.deltaTime * speed;
+				
 
 			yield return null;
 		}
 
-		yield return new WaitForSeconds (0.5f);
+		yield return new WaitForSeconds (0.4f);
 
 		Vector3 newTarget = target.y == topPosition.y ? bottomPosition : topPosition;
 
