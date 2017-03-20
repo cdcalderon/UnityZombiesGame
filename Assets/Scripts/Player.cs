@@ -14,8 +14,8 @@ public class Player : MonoBehaviour {
 	private AudioSource audioSource;
 
 	void Awake() {
-		Assert.IsNotNull (sfxJump);
-		Assert.IsNotNull (sfxDeath);
+	//	Assert.IsNotNull (sfxJump);
+	//	Assert.IsNotNull (sfxDeath);
 	}
 
 	// Use this for initialization
