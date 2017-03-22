@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.Assertions;
+using System.Collections;
+
 
 public class Player : MonoBehaviour {
 
@@ -14,8 +15,8 @@ public class Player : MonoBehaviour {
 	private AudioSource audioSource;
 
 	void Awake() {
-	//	Assert.IsNotNull (sfxJump);
-	//	Assert.IsNotNull (sfxDeath);
+		Assert.IsNotNull (sfxJump);
+		Assert.IsNotNull (sfxDeath);
 	}
 
 	// Use this for initialization
