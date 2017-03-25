@@ -14,10 +14,10 @@ public class Rock : DynamicGameObject {
 
   protected override void Update () {
 
-    // if (GameManager.instance.PlayerActive) {
-    // 	base.Update ();
-    // }
-    base.Update ();
+    if (GameManager.instance.PlayerActive) {
+    	base.Update ();
+    }
+    
   }
 
   IEnumerator Move (Vector3 target) {

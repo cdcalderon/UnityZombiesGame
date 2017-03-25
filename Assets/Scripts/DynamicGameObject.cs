@@ -15,20 +15,20 @@ public class DynamicGameObject : MonoBehaviour {
   // Update is called once per frame
   protected virtual void Update () {
 
-    // if (!GameManager.instance.GameOver) {
-    // 	transform.Translate(Vector3.left * (objectSpeed * Time.deltaTime));
+    if (!GameManager.instance.GameOver) {
+    	transform.Translate(Vector3.left * (objectSpeed * Time.deltaTime));
 
-    // 	if (transform.localPosition.x <= resetPosition) {
-    // 		Vector3 newPos = new Vector3(startPosition, transform.position.y, transform.position.z);
-    // 		transform.position = newPos;
-    // 	}
-    // }
-    transform.Translate (Vector3.left * (objectSpeed * Time.deltaTime));
-
-    if (transform.localPosition.x <= resetPosition) {
-      Vector3 newPos = new Vector3 (startPosition, transform.position.y, transform.position.z);
-      transform.position = newPos;
+    	if (transform.localPosition.x <= resetPosition) {
+    		Vector3 newPos = new Vector3(startPosition, transform.position.y, transform.position.z);
+    		transform.position = newPos;
+    	}
     }
+    // transform.Translate (Vector3.left * (objectSpeed * Time.deltaTime));
+
+    // if (transform.localPosition.x <= resetPosition) {
+    //   Vector3 newPos = new Vector3 (startPosition, transform.position.y, transform.position.z);
+    //   transform.position = newPos;
+    // }
 
   }
 }
