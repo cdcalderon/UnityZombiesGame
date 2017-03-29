@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour {
 
 		DontDestroyOnLoad (gameObject);
 
-	//	Assert.IsNotNull (mainMenu);
+		Assert.IsNotNull (mainMenu);
 	}
 
 	// Use this for initialization
